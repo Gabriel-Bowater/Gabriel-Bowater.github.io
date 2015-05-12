@@ -1,3 +1,7 @@
+a {
+  text-decoration:initial;
+}
+
 @media screen and (min-width:480px){
   /***************************
   TWO COLUMN LAYOUT
@@ -18,7 +22,7 @@
   #gallery li{
     width:28.3333%;
   }
-  
+
   #gallery li:nth-child(4n){
     clear: left;
   }
@@ -71,7 +75,7 @@
       border-bottom:5px solid #599a68;
       margin-bottom: 60px;
     }
-    }
+    
       
     
 }
