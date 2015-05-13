@@ -134,19 +134,25 @@ PAGE PORTFOLIO
   color: #bdc3c7;
 }  
 
-
 /***************************
 PAGE ABOUT
 ****************************/
 
-.profile-photo {
+.fresco-photo {
   display: block;
   max-width:150px;
   margin: 0 auto 30px;
   border-radius:45%;
 }
     
-
+.statue-photo {
+  display: block;
+  max-width:150px;
+  margin: 0 auto 30px;
+  border-radius:45%;
+  margin-top: 50px;
+}
+    
 
 /***************************
 PAGE CONTACT
@@ -196,7 +202,7 @@ PAGE QUIZ
   max-width: 60%;
   min-width: 40%;
   border-radius: 20%;
-  margin: 0 0 0 10%;
+  margin: 0 0 0 15%;
 }
 
 .quiztext  {
