@@ -42,9 +42,19 @@ header {
 }
 
 #logo img {
-  max-height: 10%;
-  max-width: 10%;
+/*  max-height: 10%;*/
+  max-width: 20%;
   margin: 4% 45% 0;
+  transition: .5s ease-in-out;
+
+}
+
+#logo img:hover {
+  -webkit-transform: scale(1.1) rotate(7deg);
+  -ms-transform: scale(1.1) ) rotate(7deg);
+  -moz-transform: scale(1.1) rotate(7deg);
+  -o-transform: scale(1.1) rotate(7deg);
+  transform: scale(1.1) rotate(7deg);
 }
 
 h1 {
@@ -217,6 +227,15 @@ PAGE QUIZ
   font-size: 0.82em;
   max-width: 26%;
   min-width: 17%;
+  transition: .5s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1) rotate(7deg);
+  -ms-transform: scale(1.1) ) rotate(7deg);
+  -moz-transform: scale(1.1) rotate(7deg);
+  -o-transform: scale(1.1) rotate(7deg);
+  transform: scale(1.1) rotate(7deg);
 }
 
 /***************************
