@@ -329,6 +329,15 @@ PAGE SURVEY
   background-color: #468966;
   color: #FFF0A5;
   font-weight: bold;
+  transition: .5s ease-in-out;
+}
+
+#submit_button:hover {
+  -webkit-transform: scale(1.1) rotate(7deg);
+  -ms-transform: scale(1.1) ) rotate(7deg);
+  -moz-transform: scale(1.1) rotate(7deg);
+  -o-transform: scale(1.1) rotate(7deg);
+  transform: scale(1.1) rotate(7deg);
 }
 
 input[type="text"],
