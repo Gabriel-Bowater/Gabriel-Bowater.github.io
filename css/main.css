@@ -313,9 +313,10 @@ PAGE SURVEY
 
 #submit_button{
   border: none;
-  font-size: 16px;
+  font-size: 1em;
   height: auto;
   max-width: 10%;
+  min-width: 90px;
   margin: 0 45%;
   outline: 0;
   padding: 15px;
@@ -325,8 +326,9 @@ PAGE SURVEY
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   border-radius: 15%;
-  background-color: #FFF0A5;
-  color:  #468966;
+  background-color: #468966;
+  color: #FFF0A5;
+  font-weight: bold;
 }
 
 input[type="text"],
