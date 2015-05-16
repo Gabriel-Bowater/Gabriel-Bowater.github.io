@@ -112,7 +112,7 @@ footer {
     text-align:center;
     clear: both;
     padding-top:50px;
-    color: #ccc;
+    color: #777;
 }
     
 
@@ -256,6 +256,114 @@ PAGE QUIZ
   -o-transform: scale(1.1) rotate(7deg);
   transform: scale(1.1) rotate(7deg);
 }
+
+/***************************
+PAGE SURVEY
+****************************/
+#fav_apple{
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 5%;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  background-color: #FFF0A5;
+  color:  #468966;
+}
+
+#liked_apple{
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 5%;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  background-color: #FFF0A5;
+  color:  #468966;
+}
+
+#disliked_apple{
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 5%;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  background-color: #FFF0A5;
+  color:  #468966;
+}
+
+#submit_button{
+  border: none;
+  font-size: 16px;
+  height: auto;
+  max-width: 10%;
+  margin: 0 45%;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  background-color: #FFF0A5;
+  color:  #468966;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="radio"]
+textarea,
+select, {
+  /*background: rgba(255,255,255,0.1);*/
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 5%;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  background-color: #FFF0A5;
+  color:  #468966;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 5% 8px 0;
+}
+
 
 /***************************
 COLORS
