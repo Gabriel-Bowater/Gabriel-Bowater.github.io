@@ -142,7 +142,17 @@ PAGE PORTFOLIO
 }    
 
 #gallery li a img {
-  border-radius: 25%
+  border-radius: 25%;
+  transition: .5s ease-in-out;
+}
+
+#gallery img:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+
 }
 
 #gallery li a p {
@@ -260,14 +270,14 @@ PAGE QUIZ
 /***************************
 PAGE SURVEY
 ****************************/
-#fav_apple{
-  border: none;
+.surveyForm{
+  border: 2px solid #ffec8c;
   font-size: 16px;
   height: auto;
   margin: 5%;
   outline: 0;
   padding: 15px;
-  width: 90%;
+  /*width: 90%;*/
   background-color: #e8eeef;
   /*color: #8a97a0;*/
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -277,39 +287,7 @@ PAGE SURVEY
   color:  #468966;
 }
 
-#liked_apple{
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 5%;
-  outline: 0;
-  padding: 15px;
-  width: 90%;
-  background-color: #e8eeef;
-  /*color: #8a97a0;*/
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-  border-radius: 15%;
-  background-color: #FFF0A5;
-  color:  #468966;
-}
 
-#disliked_apple{
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 5%;
-  outline: 0;
-  padding: 15px;
-  width: 90%;
-  background-color: #e8eeef;
-  /*color: #8a97a0;*/
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-  border-radius: 15%;
-  background-color: #FFF0A5;
-  color:  #468966;
-}
 
 #submit_button{
   border: none;

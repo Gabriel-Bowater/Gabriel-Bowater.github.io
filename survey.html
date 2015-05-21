@@ -14,9 +14,9 @@
     <header>
       
       <a href="index.html" id="logo">
-        <h1>Apple Academy</h1>
+        <h1 class='appleAcademy'>Apple Academy</h1>
         <h2>Nature's Dental Floss</h2>
-        <img src="img/apple_header.png" alt="Cute apple">
+        <img src="img/apple_header.png" alt="Cute apple" class="cuteApple">
       </a>
       <nav>
         <ul>
@@ -34,7 +34,7 @@
       <section>
         <h3>Apple survey!</h3>
         <p>Let us know about your apple opinions.</p><br>
-        <form action="index.html" method="post" id="fav_apple">
+        <form action="index.html" method="post" class="surveyForm">
           <label>What's one your favorite apple strain?</label><br>
             <input type="radio" id="cox_orange" value="cox_orange" name="fav_apple"><label for="cox_orange" class="light">Cox's Orange</label><br>
             <input type="radio" id="red_delicious" value="red_delicious" name="fav_apple"><label for="red_delicious" class="light">Red Delicious</label><br>
@@ -43,7 +43,7 @@
             <input type="radio" id="fuji" value="fuji" name="fav_apple"><label for="fuji" class="light">Fuji</label><br>
             <input type="radio" id="royal_gala" value="royal_gala" name="fav_apple"><label for="royal_gala" class="light">Royal Gala</label><br>
         </form>        
-        <form action="index.html" method="post" id="liked_apple">
+        <form action="index.html" method="post" class="surveyForm">
           <label>Which other kinds of apple do you like?</label><br>
             <input type="radio" id="cox_orange0" value="cox_orange0" name="cox_orange0"><label for="cox_orange0" class="light">Cox's Orange</label><br>
             <input type="radio" id="red_delicious0" value="red_delicious0" name="red_delicious0"><label for="red_delicious0" class="light">Red Delicious</label><br>
@@ -53,7 +53,7 @@
             <input type="radio" id="royal_gala0" value="royal_gala0" name="royal_gala0"><label for="royal_gala0" class="light">Royal Gala</label><br>
         </form>
 
-        <form action="index.html" method="post" id="disliked_apple">
+        <form action="index.html" method="post" class="surveyForm">
           <label>Are there any strains of apple you don't like?</label><br>
             <input type="radio" id="cox_orange" value="cox_orange1" name="cox_orange1"><label for="cox_orange1" class="light">Cox's Orange</label><br>
             <input type="radio" id="red_delicious1" value="red_delicious1" name="red_delicious1"><label for="red_delicious1" class="light">Red Delicious</label><br>
@@ -77,5 +77,7 @@
         </footer>
         </div>
     </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>  
 </html>
