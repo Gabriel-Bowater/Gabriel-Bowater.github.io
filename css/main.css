@@ -27,7 +27,9 @@ img {
 }
 
 h3 {
-  margin: 0 0 1em 0;
+  margin: 0 10% 0 10%;
+  font-size: 1.4em;
+  text-align: center;
 }
 /***************************
 HEADING
@@ -178,7 +180,7 @@ PAGE PORTFOLIO
 }
 
 #overlay img {
-  margin-top: 4%;
+  margin-top: 7%;
   max-width: 53%;
   border-radius: 5%;
 }
@@ -290,6 +292,52 @@ PAGE QUIZ
   -o-transform: scale(1.1) rotate(7deg);
   transform: scale(1.1) rotate(7deg);
 }
+
+
+#quiz_start_button{
+  border: none;
+  font-size: 1em;
+  height: auto;
+  max-width: 10%;
+  min-width: 90px;
+  margin: 0 45%;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 15%;
+  background-color: #468966;
+  color: #FFF0A5;
+  font-weight: bold;
+  transition: .5s ease-in-out;
+}
+
+#quiz_start_button:hover {
+  -webkit-transform: scale(1.1) rotate(7deg);
+  -ms-transform: scale(1.1) ) rotate(7deg);
+  -moz-transform: scale(1.1) rotate(7deg);
+  -o-transform: scale(1.1) rotate(7deg);
+  transform: scale(1.1) rotate(7deg);
+}
+
+.quizscoring{
+  margin-left: 30%;
+}
+.quizscoring li{
+  background-color: rgba(255, 240, 165, .7);
+  /*border: 2px solid #ffec8c;*/
+  font-size: 1.2em;
+  max-width: 40%
+}
+
+h4{
+  padding-left: 10%;
+}
+
+
 
 /***************************
 PAGE SURVEY
