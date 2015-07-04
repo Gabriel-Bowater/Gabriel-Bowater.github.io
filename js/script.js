@@ -66,72 +66,125 @@ QUIZ PAGE
 //making quiz question appear one by one, adding a score counter
 
 var score = 0
-var quizover = true
+var quizover = false
 var rank = 'initial';
+reporting = ""
+var $answerBoxWrong = $('<div id="answerboxwrong"><p id="answerBoxText">Incorrect :(</p></div>');
+var $answerBoxCorrect = $('<div id="answerboxcorrect"><p id="answerBoxText">That\' Apple-solutely Correct! ^_^</p></div>');
+var $answerCaption = $('<p></p>');
+// var $reportBox = $('<div id="reportBox"><p id="answerBoxText">' + reporting + '</p></div>');
+// $('header').append($reportBox);
+$('header').append($answerBoxWrong);
+$('header').append($answerBoxCorrect);
 
+var questions = ['.question1','.question2','.question3','.question4','.question5'];
 
+for(var i in questions){
+	$(questions[i]).hide();
+}
 
-$('.question1').hide();
-$('.question2').hide();
-$('.question3').hide();
-$('.question4').hide();
-$('.question5').hide();
 $('.quizscoring').hide();
 
 $('.correct').click(function(){
 	score += 1
+	$answerBoxCorrect.show();
 	console.log(score)
 	console.log(rank)
 })
 
-rank='spank'
+var $answerText = $('<p></p>');
+
+$('.incorrect').click(function(event){
+
+	$answerBoxWrong.show();
+});
+
+$answerBoxWrong.click(function(){
+	$answerBoxWrong.fadeOut(300);
+});
+
+$answerBoxCorrect.click(function(){
+	$answerBoxCorrect.fadeOut(300);
+});
+
+
+
+function runQuiz(){
+	alert("Sup biatch!")
+	for (var i in questions){
+		$(questions[i]).click(function(){
+			$(questions[i]).hide();
+			$(questions[i+1]).fadeIn(600);
+		});
+	};
+	quizover = true
+	report();
+};
+
 
 $('#quiz_start_button').click(function(){
 	$(this).hide();
-	$('.question1').fadeIn(600);
+	$('.question1').show();
 });
 $('.question1').click(function(){
+	// runQuiz();
 	$('.question1').hide();
-	$('.question2').fadeIn(600);
+	$('.question2').show();
 });
 $('.question2').click(function(){
 	$('.question2').hide();
-	$('.question3').fadeIn(600);
+	$('.question3').show();
 });
 $('.question3').click(function(){
 	$('.question3').hide();
-	$('.question4').fadeIn(600);
+	$('.question4').show();
 });
 $('.question4').click(function(){
 	$('.question4').hide();
-	$('.question5').fadeIn(600);
+	$('.question5').show();
 });
 $('.question5').click(function(){
 	$('.question5').hide();
-	$('.quizscoring').fadeIn(600);
-	quizover = false
-	alert('You got ' + score + ' out of 5! Check out your Apple Rank')
+	$('.quizscoring').show();
+	quizover = true
+	report();
 });
 
-// if(1 == score){
-// 	rank ='Amateur';
-// 	console.log('amateur');
-// 	console.log(rank);
-// };
-// if(2 == score){
-// 	rank = 'Aspirant';
-// };
-// if(3 == score){
-// 	rank = 'Adventurer';
-// };
-// if(4 == score){
-// 	rank = 'Acolyte';
-// };
-// if(5 == score){
-// 	rank = 'Academic';
-// };
+if (quizover){
+	report();
+}
 
-// if (quizover = false){
+function report(){
+	rank=''
+	$('.quiztext').hide();
+	switch(score){
+		case 0: 
+			rank = "Abortion";
+			break;
+		case 1: 
+			rank = "Amateur";
+			break;
+		case 2: 
+			rank = "Aspirant";
+			break;
+		case 3: 
+			rank = "Adventurer";
+			break;
+		case 4: 
+			rank = "Acolyte";
+			break;
+		case 5: 
+			rank = "Academic";
+	}
+	reporting = ('You got ' + score + ' out of 5! You achieved the rank of Apple ' + rank)
+	var $reportBox = $('<div id="reportBox"><p id="reportBoxText">' + reporting + '</p></div>');
+	$('header').append($reportBox);
+	$reportBox.show();
+	console.log(reporting);
+	
+	$reportBox.click(function(){
+		$reportBox.fadeOut(300);
+	});
+}
 
 
-// }
